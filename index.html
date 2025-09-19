@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Noveyplush</title>
+        <meta name="description" content="Noveyplush's home page" />
+        <meta name="keywords" content="webpage, home, pixel" />
+        <meta name="author" content="Enzo « Noveyplush » Collet" />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Press%20Start%202P");
+
+            body {
+                font-family: 'Press Start 2P';
+
+                /*Taken from https://css-tricks.com/stripes-css/*/
+                background: repeating-linear-gradient(
+                    45deg,
+                    #f1af00,
+                    #f1af00 50px,
+                    #efc326 50px,
+                    #efc326 100px
+                );
+                background-size: 400% 400%;
+                animation: gradient 20s linear infinite;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            @keyframes gradient {
+                /*Taken from https://codepen.io/P1N2O/pen/pyBNzX*/
+                0% {
+                    background-position: 0% 50%;
+                }
+                100% {
+                    background-position: 100% 50%;
+                }
+            }
+
+            .main_frame {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .tails_figure {
+                justify-content: center;
+            }
+
+            .tails_figure__sprite {
+                width: 30%;
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+            }
+
+            a {
+                color: #007bff;
+            }
+
+            a:visited {
+                color: #007bff;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="main_frame">
+            <h1>En cours de construction...</h1>
+            <figure class="tails_figure">
+                <img src="assets/tails.gif" alt="tails" class="tails_figure__sprite" />
+                <figcaption>Sprite de <a href="https://www.instagram.com/saucekye/">SauceK</a></figcaption>
+            </figure>
+        </section>
+    </body>
+</html>
