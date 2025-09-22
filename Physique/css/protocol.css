@@ -31,13 +31,17 @@
 }
 
 .METH__protocol__setup_video {
+	flex: 1;
 	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .METH__protocol__setup_video__balloon {
-	width: 80%;
+	flex: 2;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .METH__protocol__setup_video__balloon img {
@@ -54,4 +58,8 @@
 .METH__protocol__explanation {
 	text-align: justify;
 	margin: 20px 0px;
+}
+
+.METH__protocol__explanation__molar_volume {
+	background-color: var(--plt-forest-green);
 }

@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="./css/chemical_reaction.css" />
 		<link rel="stylesheet" href="./css/quantities.css" />
 		<link rel="stylesheet" href="./css/protocol.css" />
+		<link rel="stylesheet" href="./css/uncertainly.css" />
 
 		<!--QW55d2F5cyB3ZWxjb21lLCBQZW5pcyBQcmFnZXIgaGVyZSwgdGhpcyBpcyB0aGUgRmFydHNpZGUgU2hhdA==-->
 
@@ -48,6 +49,7 @@
 					<li><a href="#equation_bilan">Equation bilan</a></li>
 					<li><a href="#quantites">Quantités</a></li>
 					<li><a href="#protocole">Protocole</a></li>
+					<li><a href="#incertitude">Notion d'incertitude</a></li>
 				</ul>
 			</section>
 
@@ -248,7 +250,9 @@
 						<img alt="Installation" src="./assets/img/setup_de_salopard.png" />
 						<p>< Dans cette installation l'Acide Chlorhydrique est contenu dans l'Erlenmeyer. La pipette inversée est remplie d'eau, puis placée dans un cristallisoir lui aussi rempli d'eau. Un tube relie l'erlenmeyer à la pipette. Pour commencer la réaction, on introduit le magnésium dans l'Erlenmeyer, puis on le ferme immédiatement. </p>
 					</div>
-					<iframe class="METH__yt_iframe" width="560" height="315" src="https://www.youtube.com/embed/hCQCP-5g5bo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+					<video controls width="30%">
+						<source src="./assets/reaction_de_salopard.webm" type="video/webm" controlslist="nodownload" />
+					</video>
 					<!--M5rPSdG2sSU-->
 				</section>
 				<h3 style="margin: 20px 0px">Volume de Dihydrogène</h3>
@@ -257,10 +261,90 @@
 				<p class="METH__protocol__explanation">On sait que le réactif limitant est le Magnésium. On sait également qu'on a 1,6x10⁻³ moles de Magnésium. L'équation bilan nous dit que pour 1 mole de Magnésium et 2 moles d'Ions Hydrogène, 1 mole d'Ions Magnésium et 1 mole de Dihydrogène seront produites. On peut donc en déduire qu'avec 1,6x10⁻³ moles de Magnésium, 1,6x10⁻³ moles de dihydrogène seront produites.</p>
 				<section class="METH__protocol__explanation__molar_volume nes-container with-title is-rounded">
 					<h3>Volume Molaire de Dihydrogène</h3>
-					<p class="METH__protocol__explanation">Le <span class="METH__keyword">volume molaire</span> d'un gaz correspond au volume occupé par une mole de ce gaz. Par conséquent, son unité est L.mol⁻¹. </p>
+					<p class="METH__protocol__explanation">Le <span class="METH__keyword">volume molaire</span> d'un gaz correspond au volume occupé par une mole de ce gaz. Par conséquent, son unité est L.mol⁻¹. On peut en déduire une formule : </p>
+					<div style="display: flex; align-items: center;">
+						<span>Vm<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">esp</span> = </span>
+						<div class="METH__fraction" style="margin-left: 40px;"><span>V<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">esp</span></span><div class="METH__separator" style="margin-bottom: 10px !important;"></div><span>n<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">esp</span></span></div>
+					</div>
 					<p class="METH__protocol__explanation">Volume occupé par le Dihydrogène V<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> = 4,8x10⁻² L</p>
 					<p class="METH__protocol__explanation">Quantité de matière de Dihydrogène n<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> = 1,6x10⁻³ mol</p>
+					<div style="display: flex; align-items: center;">
+						<p>Volume molaire Vm<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> = </p>
+						<div class="METH__fraction" style="margin: 0px 20px;">
+							<span>4,8x10⁻²</span>
+							<div clasS="METH__separator" style="margin: 0px !important; margin-bottom: 10px!important;"></div>
+							<span>1,6x10⁻³</span>
+						</div>
+						<p> = 30 L.mol⁻¹</p>
+					</div>
 				</section>
+			</section>
+
+			<section class="METH__section_card METH__uncertainly nes-container with-title is-centered" id="incertitude">
+				<h2 class="title">Notion d'incertitude</h2>
+				<p class="METH__uncertainly__paragraph">En physique, les conditions d'expériences, les erreurs de précision dans les mesures, les erreurs de manipulations peuvent s'accumuler et fausser les résultats. Une précision parfaite est impossible dans le monde réel, alors pour pouvoir donner des résultats cohérents, le physicien utilise la <span class="METH__keyword">Notion d'Incertitude</span>.</p>
+				<p class="METH__uncertainly__paragraph">À nos mesures s'ajoutent celles de la classe : </p>
+				<div class="nes-table-responsive">
+					<table class="nes-table is-bordered is-centered" style="background-color: var(--plt-indigo) !important;">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Volume Molaire (Vm)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Groupe 1</td>
+								<td>29 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 2</td>
+								<td>31 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 3</td>
+								<td>30 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 4</td>
+								<td>33 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 5</td>
+								<td>30 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 6</td>
+								<td>28 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 7</td>
+								<td>30 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 8</td>
+								<td>29 L.mol⁻¹</td>
+							</tr>
+							<tr>
+								<td>Groupe 4</td>
+								<td>30 L.mol⁻¹</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			<div style="margin: 20px 0px; display: flex; align-items: center; flex-wrap: wrap; justify-content: center;">
+				<p class="METH__uncertainly__paragraph">On commence par déterminer la moyenne de toutes les mesures : </p>
+				<div class="METH__fraction"><span>29 + 31 + 30 + 33 + 30 + 28 + 30 + 29 + 30</span><div class="METH__separator" style="margin: 0px !important;"></div><span>9</span></div>
+				<p class="METH__uncertainly__paragraph" style="margin-left: 20px;"> = 30</p>
+			</div>
+			<p class="METH__uncertainly__paragraph">Le moyenne, qu'on notera <span class="METH__keyword">Xmoy</span>, donne une idée du résultat, mais nous pouvons faire encore mieux : un encadrement. On l'écrira alors <span class="METH__keyword">Xmoy-U(X) < X < Xmoy + U(X)</span>, où U(X) correspond à l'écart-type de la série de mesures.</p>
+			<p class="METH__uncertainly__paragraph">À l'aide d'une calculatrice, on peut calculer l'écart-type à environ 1,33. Celui-ci est ensuite <span class="METH__keyword">toujours</span> arrondi à l'entier supérieur. On a donc U(X) = 2</p>
+			<p class="METH__uncertainly__paragraph">Nous pouvons écrire l'encadrement final de ce TP : 30 - 2 L.mol⁻¹ < Vm<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> < 30 + 2 L.mol⁻¹ = 28 L.mol⁻¹ < Vm<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> < 32 L.mol⁻¹</p>
+
+			<section class="nes-container is-rounded with-title" style="background-color: var(--plt-indigo); margin: 40px 20px 20px 20px">
+				<h3 class="title" style="background-color: var(--plt-indigo) !important;">Conclusion</h3>
+				<p style="text-align: justify;">À travers ce TP, nous avons pu déterminer que le volume molaire du Dihydrogène est compris dans l'intervalle 28 L.mol⁻¹ < Vm<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> < 32 L.mol⁻¹. Nous avons entre autres découvert la notion d'incertitude qui nous servira tout au long de l'année.</p>
+			</section>
 			</section>
 
 			<!--
@@ -297,68 +381,6 @@
 			⠀⠀⠀⠀⠀⠈⠦⡑⣀⠀⠀⠱⠀⠀⠑⢆⡀⠑⣄⣘⣦⣖⣯⡵⠞⠋⠁⠀⠀⠈⠙⠻⣿⣮⡛⢧⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠾⣻⢻⣿⠀⡌⢁⠏⢀⣬⣼⡿⠟⣻⠰⢫⢁⣼⡇⠀
 			⣤⣤⣤⣤⣤⣀⣐⣈⣒⣐⣀⣠⣤⣤⣴⣾⡿⠿⠿⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠷⣾⣭⣭⣄⡈⠲⠢⠀⠀⠀⠀⠀⣠⣤⣾⣻⡽⠿⠛⠿⢾⣥⣤⣤⣀⣮⣤⣇⣤⣤⣴⠾⠛⠉⠀⠀
 			⠀⠉⠉⡉⠉⠛⠈⠁⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠛⠿⠿⠿⠷⠞⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠈⢉⠉⠁⠉⠀⠀⠀⠉⠉⠀⠀⠀⠀
-
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⠾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⢀⣤⡾⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⣿⣠⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⣠⡾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣧⡀⠀⠀⠀⠀
-			⠀⠀⠀⠀⢀⣼⡟⠁⣠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣧⠀⠀⠀⠀
-			⠀⠀⠀⢠⣿⡿⠀⠸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣧⠀⠀⠀
-			⠀⠀⢀⣼⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⠇⠀⠀
-			⠀⠀⣾⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⠀⠀
-			⠀⢸⣧⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀
-			⠀⢸⣽⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⣿⠀
-			⠀⣸⣿⡇⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣠⣤⣤⣠⣤⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡷⣿⡇
-			⢠⣿⣿⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⡿⣿⣷⣦⠀⠀⠀⠀⠀⣴⣿⣟⣋⣉⣿⣿⣅⣠⣯⣾⣿⣿⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⢻⡇
-			⠀⣿⣿⠀⠀⠀⠀⠀⢸⣿⣿⠿⣻⣷⠿⠿⢿⣯⣉⠁⠀⠀⠀⠀⠀⠀⢉⣩⣽⡿⠿⠿⠿⢿⣥⣴⡿⣿⣿⣧⡤⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⢸⡇
-			⠀⢹⣿⠀⠀⠀⠀⠀⠀⢠⣄⣾⣿⣧⣤⡤⣤⣈⣻⣷⡄⠀⠀⢀⡀⣴⣿⣿⣋⣧⣶⡿⢶⣾⣿⣿⣧⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣹⡇
-			⠀⢸⣿⡄⠀⠀⠀⠀⠀⠈⠉⠉⢹⣟⠻⠶⠿⠉⣽⣿⠇⠀⠀⠀⠀⠿⠿⠿⠋⠹⣿⣿⣾⣷⡾⠟⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠋⠁
-			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠳⠾⠛⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣏⣿⠀⠀
-			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⣿⣟⠀⠀
-			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣽⣿⡏⠀⠀
-			⠀⠈⠻⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⠀⠀
-			⠀⠀⠀⠈⢿⡆⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⠿⣿⣿⣿⣿⣿⣿⣿⠿⣿⡿⠻⣿⣻⣿⣦⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀
-			⠀⠀⠀⠀⠘⣧⠀⠠⡄⠀⠀⣴⣿⣿⣻⠛⣿⣇⣈⣿⣿⣿⣿⣻⣿⣷⣿⣷⣤⣤⣿⣿⣿⣿⣿⣿⣦⣄⢀⠀⠀⠀⠀⠄⢀⡀⠀⠀⢰⣿⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⢸⠀⠰⣄⠀⣾⣿⣿⣿⣿⣿⣻⣿⣧⣜⠻⢿⡿⢛⣿⣿⡏⢹⣿⣝⣿⣿⣷⣿⣿⣿⣿⣿⠉⠀⡀⠀⠀⠀⢼⠇⠀⠀⢸⣿⡄⠀⠀⠀
-			⠀⠀⠀⠀⠀⢾⣧⠀⠸⡆⣿⣿⣿⣿⣿⣿⠟⠋⠙⠛⠿⠿⠿⠿⠟⠛⠛⠛⠛⠛⠛⠿⠿⣿⣿⣿⣿⣿⡆⢸⡇⢀⣷⠀⠀⠀⠀⠀⣿⣿⣇⠀⠀⠀
-			⠀⠀⠀⠀⠀⢸⣿⣇⠀⢱⠘⠿⠉⠁⠙⢿⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣾⠟⠉⠁⠻⠇⢸⡇⣸⡟⠀⠀⠀⠀⣼⣿⣏⣻⡄⠀⠀
-			⠀⠀⠀⠀⠀⢸⢹⣿⣷⠀⠀⠀⠀⠀⢲⡀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⣡⣾⡟⠀⠀⠀⠀⢀⣿⢡⣿⠃⠀⠀⠀⣼⣿⣿⡟⣇⣇⠀⠀
-			⠀⠀⠀⠀⠀⢸⡇⢹⣿⡆⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⡿⠟⠋⠀⠀⠀⠀⢀⣾⢃⣿⡟⠀⠀⠀⢸⣿⣿⣿⡇⠍⣾⠀⠀
-			⠀⠀⠀⠀⠀⢸⠷⠾⢿⣿⠀⠀⠀⠀⢠⡆⠙⠿⣷⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣷⣀⠀⠀⠀⠀⠀⠀⣿⣵⣿⡏⠀⠀⠀⠀⣸⣿⣿⣿⡇⢠⣿⡄⠀
-			⠀⠀⠀⠀⠀⠈⠀⠀⠘⣿⣆⠀⠀⠀⠀⣷⠀⠀⠀⠈⠉⠀⠉⠉⠛⠃⠀⠀⠀⠈⠻⣷⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⡿⢻⡇⠀
-			⠀⠀⠀⠀⠀⣆⠀⠀⠀⠸⣿⣦⡀⠀⠀⠹⣷⠀⠀⠀⢹⣄⠀⠀⠀⣠⣶⡄⠀⠀⠀⢻⡆⠀⠀⠀⣤⣤⣶⣦⣄⣀⢀⣶⣿⣿⣿⡿⠛⠁⢀⣼⠇⠀
-			⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠙⣿⣿⣷⡀⢠⣿⡀⠀⠀⢸⣿⡆⠀⠀⢻⣿⣿⠀⠀⠀⢸⣿⡄⢀⣤⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⢀⡿⠏⠀⠀
-			⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⠀⣨⡿⠻⣿⣿⣿⡇⠀⠀⠸⣿⡇⠀⠀⠸⣿⣿⡆⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀⣀⡴⠋⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠳⣄⣠⡾⠋⠀⢰⡞⢿⣿⡁⠀⠀⠀⢿⣧⠀⠀⠀⢿⣿⡇⠀⠀⠀⠛⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠙⡏⠀⠀⣠⣾⡾⠛⠛⠛⠛⠛⠷⣾⣿⣷⣴⣦⣤⣾⣿⣶⣶⣶⣾⡟⠛⠛⣿⠛⠉⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⣼⠃⣰⣣⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⢿⡿⣿⣿⣿⣿⠀⠀⠀⢹⣆⠀⠀⢀⣴⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠐⣷⣼⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⢀⣤⠶⠶⠀⠀⠀⠀⠀⠀⠀⠈⠻⣄⠀⠀⠀⠹⣦⣴⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⢻⡇⠀⠀⠀⠀⠀⠚⠉⠁⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡄⠀⠀⠀⠻⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣦⡄⢰⣄⣀⣀⣀⣠⣤⣾⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣦⣤⣤⡄⠙⣶⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣤⣝⣿⣿⣾⠿⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣆⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡋⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⢀⣴⠀⠜⠋⠀⣰⣾⠿⠟⣿⠛⣿⣿⢹⠀⠀⠀⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⣦⣀⣀⣀⣀⣀⣠⣶⣶⣾⡿⠋⣼⣷⠀⣺⣿⣇⣶⡾⠁⠀⣿⣿⢸⠀⠀⠀⢸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠛⠛⠛⠛⠛⠛⠋⠉⠉⣠⣾⣿⣿⣾⣿⣿⣿⢿⠇⠀⠀⣿⣿⣿⠀⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣦⣀⠀⠀⠀⢀⣠⣶⣿⣿⣿⢩⣉⣹⣿⣿⣧⣾⠀⠀⠀⢹⣿⣿⠂⠀⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣷⣶⣶⣿⣿⣿⠟⢙⣿⣿⣿⣟⣿⡛⠛⠋⠀⠀⠀⣼⣿⣿⡀⠀⠀⠀⠸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠙⣿⣯⣉⣠⣶⣿⡏⠉⠹⠿⠛⠁⠀⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠸⣇⠀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢠⠀⠉⠉⠉⠁⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣾⠀⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣦⣄⠀⠀⠀⠘⣿⣷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⡇⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣦⣭⣉⠉⠻⣦⣄⡀⢈⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣷⣴⣶⣤⣀⢸⣿⣧⠀⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⣛⡓⠶⣭⣻⣷⢾⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⣾⣿⡟⢻⠛⢛⣒⣛⣛⣛⣻⣿⣿⣆⠀⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠟⠛⠛⠉⢉⣥⣿⡟⣳⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠈⠁⣿⡟⠷⠀⠘⣿⣍⣩⣭⣍⣻⣿⣿⡄⠀⠀⠀⠀
-			⠀⠀⠀⠀⠀⣠⠶⠒⠛⠛⠓⠲⠶⣦⣤⣎⡉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣧⠀⠰⢶⣿⣭⣭⣽⣯⣽⣿⣿⣧⠀⠀⠀⠀
-			⠀⠀⠀⢀⣼⡏⠀⠀⠀⠀⠀⠀⣠⣨⣭⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠚⣿⣿⠀⠀⠀⠙⣍⣉⣉⣉⣑⣻⣿⣿⣧⡀⠀⠀
-			⠀⠀⣴⣿⠋⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⣿⣿⡆⠀⠀⠚⠛⠛⠛⠛⠛⠿⠿⣿⣿⣧⠀⠀
-			⠀⢰⣿⣷⡀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣦⠀
-			⠀⠘⣿⣿⣿⣦⣤⣤⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡇
-			⠀⠀⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⡇
-			⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠛⠛⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣷⣮⣤⣤⣤⣤⣤⣤⣤⣤⣴⣿⣿⣿⣿⣷
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
-			⠀⠀⠀⡀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡈⢉⣙⡛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠁
 			-->
 		</div>
 	</body>

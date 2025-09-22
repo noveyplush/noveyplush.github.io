@@ -1,0 +1,12 @@
+.METH__uncertainly {
+    background-color: var(--plt-pink);
+}
+
+.METH__uncertainly h2 {
+    background-color: var(--plt-pink) !important;
+}
+
+.METH__uncertainly__paragraph {
+    text-align: justify;
+    margin: 20px 0px;
+}
