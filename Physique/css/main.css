@@ -1,0 +1,146 @@
+/*
+MIT License
+
+Copyright (c) 2025 Hugo « DarwingTheMojo » Eaton, Enzo « Noveyplush » Collet
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+METH™ : Methode Extravagante de Transformation Html
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Press%20Start%202P");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify%20Sans");
+			
+* {
+	font-family: "Press Start 2P";
+}
+
+:root {
+	--plt-black: #28282e;
+	--plt-dark-violet: #6c5671;
+	--plt-grey: #d9c8bf;
+	--plt-red: #f98284;
+	--plt-indigo: #b0a9e4;
+	--plt-cyan: #accce4;
+	--plt-turquoise: #b3e3da;
+	--plt-pink: #feaae4;
+	--plt-forest-green: #87a889;
+	--plt-green: #b0eb93;
+	--plt-lime-green: #e9f59d;
+	--plt-yogurt: #ffe6c6;
+	--plt-brown: #dea38b;
+	--plt-orange: #ffc384;
+	--plt-yellow: #fff7a0;
+	--plt-white: #fff7e4;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0% 5%;
+	background-color: var(--plt-white);
+}
+
+h1 {
+	text-align: center;
+}
+
+
+a {
+	color: var(--plt-forest-green) !important;
+}
+
+a:hover {
+	color: var(--plt-forest-green) !important;
+}
+
+a:visited {
+	color: var(--plt-forest-green) !important;
+}
+
+
+.title {
+	background-color: var(--plt-white) !important;
+}
+
+
+.METH__section_card {
+	margin: 30px 0px 30px 0px;
+}
+
+.METH__yt_iframe {
+	border-width: 4px;
+	padding: 5px;
+}
+
+.METH__separator {
+	margin: 20px 0px !important;
+	width: 80%;
+	height: 4px;
+	background-color: var(--plt-black);
+}
+
+.METH__keyword {
+	text-decoration: underline solid var(--plt-black);
+	text-decoration-thickness: 1.2px;
+}
+
+
+.METH__main_header {
+	margin: 30px 0px 30px 0px !important;
+	color: var(--plt-white) !important;
+	border-color: var(--plt-white) !important;
+}
+
+
+.METH__balloon_override-right {
+	background-color: var(--plt-white) !important;
+}
+.METH__balloon_override-left {
+	background-color: var(--plt-white) !important;
+}
+.METH__balloon_override-right::before {
+	background-color: var(--plt-white) !important;
+}
+.METH__balloon_override-left::before {
+	background-color: var(--plt-white) !important;
+}
+.METH__balloon_override-left::after {
+	background-color: var(--plt-white) !important;
+	box-shadow: -4px 0,4px 0,-4px 4px var(--plt-white),0 4px,-8px 4px,-4px 8px,-8px 8px !important;
+}
+.METH__balloon_override-right::after {
+	background-color: var(--plt-white) !important;
+	box-shadow: -4px 0,4px 0,4px 4px var(--plt-white),0 4px,8px 4px,4px 8px,8px 8px
+}
+
+.METH__arrow {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	width: 3em;
+}
+
+.METH__fraction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

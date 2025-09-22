@@ -1,0 +1,100 @@
+.METH__chemical_reaction {
+	background-color: var(--plt-lime-green);
+}
+.METH__chemical_reaction__title {
+	background-color: var(--plt-lime-green) !important;
+}
+
+.METH__chemical_reaction__introduction_paragraph, .METH__chemical_reaction__explanation {
+	text-align: justify;
+	margin: 20px;
+}
+
+.METH__chemical_reaction__states {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0px !important;
+	background-color: var(--plt-forest-green);
+}
+
+.METH__chemical_reaction__states__initial {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.METH__chemical_reaction__states__initial__species {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.METH__chemical_reaction__states__initial__species__item {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 40px;
+}
+
+.METH__chemical_reaction__states__initial__species__item__formula {
+	font-family: 'Pixelify Sans';
+	font-size: 3em;
+}
+
+.METH__chemical_reaction__states__final {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.METH__chemical_reaction__states__final__species {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.METH__chemical_reaction__states__final__species__item {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 40px;
+}
+
+.METH__chemical_reaction__states__final__species__item__formula {
+	text-emphasis-color: var(--plt-lime-green) !important;
+	font-family: 'Pixelify Sans';
+	font-size: 3em;
+}
+
+.METH__chemical_reaction__unbalanced,
+.METH__chemical_reaction__balanced {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.METH__chemical_reaction__unbalanced__item,
+.METH__chemical_reaction__balanced__item {
+	font-family: 'Pixelify Sans';
+	font-size: 3em;
+	margin: 20px;
+}
+
+.METH__chemical_reaction__macro {
+	margin: 20px 0px;
+}
+
+.METH__chemical_reaction__macro__title {
+	background-color: var(--plt-lime-green) !important;
+}
+
+.METH__chemical_reaction__macro__list {
+	text-align: left;
+}
+.METH__chemical_reaction__macro__list > * {
+	margin: 20px 0px;
+}

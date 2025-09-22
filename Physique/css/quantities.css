@@ -1,0 +1,43 @@
+.METH__quantities {
+    background-color: var(--plt-indigo);
+}
+
+.METH__quantities__title {
+    background-color: var(--plt-indigo) !important;
+}
+
+.METH__quantities__introduction {
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.METH__quantities__mg_mole,
+.METH__quantities__hplus_mole {
+	margin: 40px 0px !important;
+    background-color: var(--plt-cyan);
+    text-align: left;
+}
+
+.METH__quantities__mg_mole__cross_product,
+.METH__quantities__hplus_mole__cross_product {
+    display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.METH__quantities__mg_mole__cross_product__formula > *,
+.METH__quantities__hplus_mole__cross_product__formula > * {
+	margin: 20px
+}
+
+.METH__quantities__mg_mole__title,
+.METH__quantities__hplus_mole__title {
+    background-color: var(--plt-cyan) !important;
+}
+
+.METH__quantities__explanation {
+    text-align: justify;
+    margin: 20px 0px;
+}

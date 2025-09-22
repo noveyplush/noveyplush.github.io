@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Page web détaillant le TP 'Volume Molaire'" />
+		<meta name="keywords" content="Chimie, Volume Molaire, NES, 8bit" />
+		<meta name="author" content="Hugo « DarwingTheMojo » Eaton, Enzo « Noveyplush » Collet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MESURE DU VOLUME MOLAIRE D’UN GAZ</title>
+		<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/introduction.css" />
+		<link rel="stylesheet" href="./css/chemical_reaction.css" />
+		<link rel="stylesheet" href="./css/quantities.css" />
+		<link rel="stylesheet" href="./css/protocol.css" />
+
+		<!--QW55d2F5cyB3ZWxjb21lLCBQZW5pcyBQcmFnZXIgaGVyZSwgdGhpcyBpcyB0aGUgRmFydHNpZGUgU2hhdA==-->
+
+		<link rel="shortcut icon" type="image/png" href="./assets/img/erlenmeyer.png" />
+		<link rel="shortcut icon" sizes="196x196" href="./assets/img/erlenmeyer.png" />
+		<link rel="apple-touch-icon" href="./assets/img/erlenmeyer.png">
+	</head>
+	<body>
+		<div id="nescss">
+
+			<!--xvFZjo5PgG0-->
+			<header class="METH__main_header nes-container is-dark">
+				<h1>Mesure du volume molaire d'un gaz</h1>
+			</header>
+			
+			<section class="METH__introduction nes-container with-title" id="introduction">
+				<h2 class="METH__introduction__title title">Introduction</h2>
+				<div class="METH__introduction__balloon message -left">
+					<i class="nes-kirby"></i>
+					<div class="METH__introduction__balloon__paragraph METH__balloon_override-left nes-balloon from-left">
+						<p>Tu t’en souviens du TP au début de l’année ? Le truc sur le volume molaire là ? Ça tombe bien, moi non plus, c’est pour ça que cette page existe.</p>
+					</div>
+				</div>
+				<p class="METH__introduction__paragraph">
+					Durant ce TP nous avons fait réagir de l'acide chlorhydrique avec du magnésium pour produire (entre autres) du dihydrogène, dans le but de pouvoir mesurer sa masse molaire. Nous allons voir ensemble comment reproduire cette expérience pas-à-pas.
+				</p>
+			</section>
+
+			<section class="METH__section_card METH__summary nes-container with-title">
+				<h2 class="title">Sommaire</h2>
+				<ul class="nes-list is-disc">
+					<li><a href="#equation_bilan">Equation bilan</a></li>
+					<li><a href="#quantites">Quantités</a></li>
+					<li><a href="#protocole">Protocole</a></li>
+				</ul>
+			</section>
+
+			<section class="METH__section_card METH__chemical_reaction topic nes-container with-title is-centered" id="equation_bilan">
+				<h2 class="METH__chemical_reaction__title title">Equation bilan</h2>
+				<p class="METH__chemical_reaction__introduction_paragraph">
+					La première étape est de déterminer <span class="METH__keyword">l'équation bilan</span> de cette réaction. Pour cela, nous devons d'abord comparer l'état initial de l'expérience à l'état final.
+				</p>
+				<section class="METH__chemical_reaction__states nes-container">
+					<section class="METH__chemical_reaction__states__initial">
+						<h3>Etat Initial</h3>
+						<div class="METH__chemical_reaction__states__initial__species">
+							<div class="METH__chemical_reaction__states__initial__species__item">
+								<span class="METH__chemical_reaction__states__initial__species__item__formula">HCl</span>
+								<span class="METH__chemical_reaction__states__initial__species__item__name">Acide Chlorhydrique<br />(H⁺ et Cl⁻)</span>
+							</div>
+							<div class="METH__chemical_reaction__states__initial__species__item">
+								<span class="METH__chemical_reaction__states__initial__species__item__formula">Mg</span>
+								<span class="METH__chemical_reaction__states__initial__species__item__name">Magnésium</span>
+							</div>
+						</div>
+					</section>
+					<div class="METH__separator"></div>
+					<section class="METH__chemical_reaction__states__final">
+						<h3>Etat Final</h3>
+						<div class="METH__chemical_reaction__states__final__species">
+							<div class="METH__chemical_reaction__states__final__species__item">
+								<span class="METH__chemical_reaction__states__final__species__item__formula">Mg²⁺</span>
+								<span class="METH__chemical_reaction__states__final__species__item__name">Ions Magnésium</span>
+							</div>
+							<div class="METH__chemical_reaction__states__final__species__item">
+								<span class="METH__chemical_reaction__states__final__species__item__formula">Cl⁻</span>
+								<span class="METH__chemical_reaction__states__final__species__item__name">Ions Chlorure</span>
+							</div>
+							<div class="METH__chemical_reaction__states__final__species__item">
+								<span class="METH__chemical_reaction__states__final__species__item__formula">H<span class="METH__subset" style="font-family: 'Pixelify Sans'; font-size: 0.5em !important; position: relative; bottom: -10px;">2</span></span>
+								<span class="METH__chemical_reaction__states__final__species__item__name">Dihydrogène</span>
+								<!--Dih-hydrogen 🥀-->
+							</div>
+						</div>
+					</section>
+				</section>
+				<p class="METH__chemical_reaction__explanation">
+					Nous pouvons déjà nous débarraser des espèces qui apparaissent des deux côtés (autrement appelées <span class="METH__keyword">espèces spectatrices</span>). Dans notre cas, l'ion chlorure apparait des deux côtés.<br />Nous pouvons déjà établir une équation non équilibrée de la réaction :
+				</p>
+				<div class="METH__chemical_reaction__unbalanced">
+					<span class="METH__chemical_reaction__unbalanced__item">H⁺</span>
+					<span class="METH__chemical_reaction__unbalanced__item">+</span>
+					<span class="METH__chemical_reaction__unbalanced__item">Mg</span>
+					<img class="METH__arrow" alt="flèche équation bilan" src="./assets/img/arrow.png" style="margin: 0px 20px" />
+					<span class="METH__chemical_reaction__unbalanced__item">H<span style="font-family: 'Pixelify Sans'; font-size: 0.5em !important; position: relative; bottom: -10px;">2</span></span>
+					<span class="METH__chemical_reaction__unbalanced__item">+</span>
+					<span class="METH__chemical_reaction__unbalanced__item">Mg²⁺</span>
+					<span></span>
+				</div>
+				<p class="METH__chemical_reaction__explanation">
+					Maintenant, nous devons équilibrer l'équation. Pour cela, il faut comparer le nombre d'espèces de chaque côté. Dans un premier temps, nous pouvons ignorer les charges électroniques.<br /><br /><span class="METH__keyword">Pour le magnésium</span> : Un atome de magnésium côté réactifs, un atome d'ion magnésium côté produits. Pas besoin d'équilibrer.<br /><span class="METH__keyword">Pour l'hydrogène</span> : Un atome d'hydrogène côté réactifs, deux atomes d'hydrogène côté produits.<br /><br />On ajoute un atome d'hydrogène du côté des réactifs, et nous obtenons cette équation équilibrée :
+				</p>
+				<div class="METH__chemical_reaction__balanced">
+					<span class="METH__chemical_reaction__balanced__item" style="color: var(--plt-red); margin: 0px;">2</span>
+					<span class="METH__chemical_reaction__balanced__item">H⁺</span>
+					<span class="METH__chemical_reaction__balanced__item">+</span>
+					<span class="METH__chemical_reaction__balanced__item">Mg</span>
+					<img class="METH__arrow" alt="flèche équation bilan" src="./assets/img/arrow.png" style="margin: 0px 20px" />
+					<span class="METH__chemical_reaction__balanced__item">H<span style="font-family: 'Pixelify Sans'; font-size: 0.5em !important; position: relative; bottom: -10px;">2</span></span>
+					<span class="METH__chemical_reaction__balanced__item">+</span>
+					<span class="METH__chemical_reaction__balanced__item">Mg²⁺</span>
+					<span></span>
+				</div>
+				<p class="METH__chemical_reaction__explanation" style="margin-bottom: 40px;">
+					Nous n'avons pas besoin d'équilibrer les charges électroniques, les deux côtés de l'équation contiennent le même nombre de charges.
+				</p>
+				<section class="METH__chemical_reaction__macro nes-container with-title is-rounded">
+					<h3 class="METH__chemical_reaction__macro__title title">Interpétation Macroscopique</h3>
+					<ul class="METH__chemical_reaction__macro__list nes-list is-disc">
+						<!--Did someone say "List" ?-->
+						<li>2 moles d'Ions Hydrogène réagissent avec 1 mole de Magnésium pour former 1 mole de Dihydrogène et 1 mole d'Ions Magnésium</li>
+						<li>La quantité de matière formée d'Ions Magnésium et de Dihygrogène est égale.</li>
+						<li>La quantité de matière de Magnésium qui a réagi est égale à celle de Dihydrogène qui s'est formée.</li>
+					</ul>
+				</section>
+			</section>
+
+			<!--
+			⡴⠒⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠉⠳⡆⠀
+			⣇⠰⠉⢙⡄⠀⠀⣴⠖⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣆⠁⠙⡆
+			⠘⡇⢠⠞⠉⠙⣾⠃⢀⡼⠀⠀⠀⠀⠀⠀⠀⢀⣼⡀⠄⢷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠰⠒⠲⡄⠀⣏⣆⣀⡍
+			⠀⢠⡏⠀⡤⠒⠃⠀⡜⠀⠀⠀⠀⠀⢀⣴⠾⠛⡁⠀⠀⢀⣈⡉⠙⠳⣤⡀⠀⠀⠀⠘⣆⠀⣇⡼⢋⠀⠀⢱
+			⠀⠘⣇⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⡴⢋⡣⠊⡩⠋⠀⠀⠀⠣⡉⠲⣄⠀⠙⢆⠀⠀⠀⣸⠀⢉⠀⢀⠿⠀⢸
+			⠀⠀⠸⡄⠀⠈⢳⣄⡇⠀⠀⢀⡞⠀⠈⠀⢀⣴⣾⣿⣿⣿⣿⣦⡀⠀⠀⠀⠈⢧⠀⠀⢳⣰⠁⠀⠀⠀⣠⠃
+			⠀⠀⠀⠘⢄⣀⣸⠃⠀⠀⠀⡸⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠈⣇⠀⠀⠙⢄⣀⠤⠚⠁⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⢘⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⢰⣿⣿⣿⡿⠛⠁⠀⠉⠛⢿⣿⣿⣿⣧⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡀⣸⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⡀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⠹⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⡿⠁⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣤⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢢⣀⣠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⣀⣀⠀⢀⣀⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			-->
+			<section class="METH__quantities nes-container with-title is-centered" id="quantites">
+				<h2 class="METH__quantities__title title">Calculs de quantités</h2>
+				<p class="METH__quantities__introduction">Nous avons à notre disposition 0,040g de Magnésium et 30 mL d'acide chlorhydrique. Pour les calculs à venir, nous devons d'abord déterminer la quantité de matière des deux espèces.</p>
+				<section class="METH__quantities__mg_mole nes-container with-title is-rounded">
+					<h3 class="METH__quantities__mg_mole__title title">Magnésium</h3>
+					<p>Masse molaire du magnésium M<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">Mg</span> = 24,3 g.mol⁻¹</p>
+					<p>Masse de l'échantillon de Magnésium m<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">Mg</span> = 0,040 g = 4,0x10⁻² g</p>
+					<p style="margin: 40px 0px">Pour obtenir la quantité de matière de Magnésium, nous pouvons résonner par produit en croix :</p>
+					<section class="METH__quantities__mg_mole__cross_product">
+						<div class="METH__quantities__mg_mole__cross_product__representation">
+							<span>1 mol <img class="METH__arrow" alt="flèche" src="./assets/img/arrow.png" /> 24,3 g</span><br />
+							<span>n mol <img class="METH__arrow" alt="flèche" src="./assets/img/arrow.png" /> 4,0x10⁻² g</span>
+						</div>
+						<div class="METH__quantities__mg_mole__cross_product__formula">
+							<div style="display: flex; align-items: center;"><span style="margin-right: 20px">n = </span><div class="METH__fraction"><span>4,0x10⁻² x 1</span><div class="METH__separator"></div><span>24,3</span></div></div>
+							<div style="display: flex; align-items: center;"><span style="margin-right: 20px">n = </span><span>1,6x10⁻³ mol</span></div>
+						</div>
+					</section>
+					<p>Nous avons donc 1,6x10⁻³ mol de Magnésium.</p>
+				</section>
+				<section class="METH__quantities__hplus_mole nes-container with-title is-rounded">
+					<h3 class="METH__quantities__hplus_mole__title title">Ion Hydrogène</h3>
+					<p>Concentration molaire de l'Acide Chlorhydrique C<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">HCl</span> = 2,0 mol.L⁻¹</p>
+					<p>Volume de l'échantillon d'Acide Chlorhydrique V<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">HCl</span> = 30mL = 3,0x10⁻² L</p>
+					<p style="text-align: justify;">L'Acide Chlorhydrique est composé d'Ions Hydrogène et d'Ions Chlorure, on peut donc en déduire que la concentration molaire de l'Ion Hydrogène est égale à celle de l'Acide Chlorhydrique.</p>
+					<p style="margin: 40px 0px">Pour obtenir la quantité de matière d'Ions Hydrogène, nous pouvons résonner par produit en croix :</p>
+					<section class="METH__quantities__hplus_mole__cross_product">
+						<div class="METH__quantities__hplus_mole__cross_product__representation">
+							<span>2,0 mol <img class="METH__arrow" alt="flèche" src="./assets/img/arrow.png" /> 1 L</span><br />
+							<span>n mol <img class="METH__arrow" alt="flèche" src="./assets/img/arrow.png" /> 3,0x10⁻² L</span>
+						</div>
+						<div class="METH__quantities__hplus_mole__cross_product__formula">
+							<div style="display: flex; align-items: center;"><span style="margin-right: 20px">n = </span><div class="METH__fraction"><span>3,0x10⁻² x 2,0</span><div class="METH__separator"></div><span>1</span></div></div>
+							<div style="display: flex; align-items: center;"><span style="margin-right: 20px">n = </span><span>6,0x10⁻² mol</span></div>
+						</div>
+					</section>
+					<p>Nous avons donc 6,0x10⁻² mol d'Ions Hydrogène.</p>
+				</section>
+				<h3>Réactif Limitant</h3>
+				<p class="METH__quantities__explanation">Le réactif limitant est celui qui sera entièrement consomé en premier, et qui arrêtera donc la réaction. C'est celui qui est présent en plus petite quantité en respectant les <span class="METH__keyword">proportions stœchiométriques</span> (les coéfficients en face des espèces).</p>
+				<p class="METH__quantities__explanation">Pour notre expérience, nous avons 1,6x10⁻³ moles de Magnésium et 6,0x10⁻² moles d'Ions Hydrogène. Cependant, les coefficients stœchiométriques stipulent qu'il faut 2 moles d'Ions Hydrogène pour 1 mole de Magnésium.</p>
+				<p class="METH__quantities__explanation">Pour 1,6x10⁻³ moles de Magnésium, il faut 1,6x10⁻³x2 = 3,2x10⁻³ moles d'Ions Hydrogène. Or, la quantité de matière d'Ions Hydrogène à notre disposition est supérieure. Le réactif limitant est donc le Magnésium.</p>
+			</section>
+
+
+			<!--
+			⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⠿⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿
+			⣿⣿⡏⠁⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣦⣤⡄⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿
+			⣿⣿⣷⣄⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡧⠇⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣾⣮⣭⣿⡻⣽⣒⠀⣤⣜⣭⠐⢐⣒⠢⢰⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⡟⣾⣿⠂⢈⢿⣷⣞⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣷⣶⣾⡿⠿⣿⠗⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⠋⠉⠑⠀⠀⢘⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⣿⡿⠟⢹⣿⣿⡇⢀⣶⣶⠴⠶⠀⠀⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⣿⣿⣿⡿⠀⠀⢸⣿⣿⠀⠀⠣⠀⠀⠀⠀⠀⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+			⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠹⣿⣧⣀⠀⠀⠀⠀⡀⣴⠁⢘⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿
+			⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⠗⠂⠄⠀⣴⡟⠀⠀⡃⠀⠉⠉⠟⡿⣿⣿⣿⣿
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⠾⠛⠂⢹⠀⠀⠀⢡⠀⠀⠀⠀⠀⠙⠛⠿⢿
+			
+			Do you want to build a meth lab?
+			Come on let's go and cook
+			I never see you anymore
+			Come out the door,
+			Let's make our product by the book!
+			-->
+			<section class="METH__section_card METH__protocol topic nes-container with-title is-centered" id="protocole">
+				<h2 class="METH__protocol__title title">Protocole Expérimental</h2>
+				<section class="METH__protocol__equipment_panel nes-container with-title">
+					<h3>MATERIEL</h3>
+					<div class="METH__protocol__equipment_panel__subframe">
+						<div class="METH__protocol__equipment_panel__subframe__item">
+							<img class="METH__protocol__equipment_panel__subframe__item__img" alt="Erlenmeyer" src="./assets/img/erlenmeyer.png">
+							<p class="METH__protocol__equipment_panel__subframe__item__title">Erlenmeyer</p>
+						</div>
+						<div class="METH__protocol__equipment_panel__subframe__item">
+							<img class="METH__protocol__equipment_panel__subframe__item__img" alt="Becher" src="./assets/img/becher.png">
+							<p class="METH__protocol__equipment_panel__subframe__item__title">Becher</p>
+						</div>
+						<div class="METH__protocol__equipment_panel__subframe__item">
+							<img class="METH__protocol__equipment_panel__subframe__item__img" alt="Cristallisoir" src="./assets/img/cristallisoir.png">
+							<p class="METH__protocol__equipment_panel__subframe__item__title">Cristallisoir</p>
+						</div>
+						<div class="METH__protocol__equipment_panel__subframe__item">
+							<img class="METH__protocol__equipment_panel__subframe__item__img" alt="Eprouvette Graduée" src="./assets/img/eprouvette_graduee.png">
+							<p class="METH__protocol__equipment_panel__subframe__item__title">Eprouvette graduée</p>
+						</div>
+						<div class="METH__protocol__equipment_panel__subframe__item">
+							<img class="METH__protocol__equipment_panel__subframe__item__img" alt="Balance" src="./assets/img/balance.png">
+							<p class="METH__protocol__equipment_panel__subframe__item__title">Balance</p>
+						</div>
+					</div>
+				</section>
+				<section class="METH__protocol__setup_video">
+					<div class="METH__protocol__setup_video__balloon METH__balloon_override-right nes-balloon from-right">
+						<img alt="Installation" src="./assets/img/setup_de_salopard.png" />
+						<p>< Dans cette installation l'Acide Chlorhydrique est contenu dans l'Erlenmeyer. La pipette inversée est remplie d'eau, puis placée dans un cristallisoir lui aussi rempli d'eau. Un tube relie l'erlenmeyer à la pipette. Pour commencer la réaction, on introduit le magnésium dans l'Erlenmeyer, puis on le ferme immédiatement. </p>
+					</div>
+					<iframe class="METH__yt_iframe" width="560" height="315" src="https://www.youtube.com/embed/hCQCP-5g5bo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+					<!--M5rPSdG2sSU-->
+				</section>
+				<h3 style="margin: 20px 0px">Volume de Dihydrogène</h3>
+				<p class="METH__protocol__explanation">A l'issue de la réaction, on observe une bulle d'air au sommet de l'éprouvette graduée. C'est le dihydrogène. On pourrait le vérifier en introduisant une allumette dans l'éprouvette, ce qui provoquerait une détonation. Grâce aux graduations, on peut déterminer le volume de cette bulle : environ 48 mL = 4,8x10⁻² L.</p>
+				<h3 style="margin: 20px 0px">Quantité de matière de Dihydrogène</h3>
+				<p class="METH__protocol__explanation">On sait que le réactif limitant est le Magnésium. On sait également qu'on a 1,6x10⁻³ moles de Magnésium. L'équation bilan nous dit que pour 1 mole de Magnésium et 2 moles d'Ions Hydrogène, 1 mole d'Ions Magnésium et 1 mole de Dihydrogène seront produites. On peut donc en déduire qu'avec 1,6x10⁻³ moles de Magnésium, 1,6x10⁻³ moles de dihydrogène seront produites.</p>
+				<section class="METH__protocol__explanation__molar_volume nes-container with-title is-rounded">
+					<h3>Volume Molaire de Dihydrogène</h3>
+					<p class="METH__protocol__explanation">Le <span class="METH__keyword">volume molaire</span> d'un gaz correspond au volume occupé par une mole de ce gaz. Par conséquent, son unité est L.mol⁻¹. </p>
+					<p class="METH__protocol__explanation">Volume occupé par le Dihydrogène V<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> = 4,8x10⁻² L</p>
+					<p class="METH__protocol__explanation">Quantité de matière de Dihydrogène n<span style="font-size: 0.7em !important; position: relative; bottom: -7px;">H<span style="font-size: 0.7em !important; position: relative; bottom: -2px;">2</span></span> = 1,6x10⁻³ mol</p>
+				</section>
+			</section>
+
+			<!--
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣴⣶⡶⠾⠟⠛⠛⠛⠛⠻⠿⠿⢶⣿⢷⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⡿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠛⠿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢔⣠⣴⡾⠟⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡏⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢽⢷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣉⡏⡙⠲⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣄⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣼⣿⣿⣿⣿⣿⣿⣷⣤⠈⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡄⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠷⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⠿⠛⠉⠉⠁⠀⠉⠛⠿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣧⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⢀⡴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣀⣠⣄⣤⡈⠻⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⣿⡄⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⢀⣴⣟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⣁⣀⣤⣤⣤⣄⠈⢳⡌⢿⣿⣦⡄⠀⠀⠀⠀⣰⡇⠀⣼⡆⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⢠⣾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⢾⡟⢹⣏⣰⣿⣿⣿⡿⣶⣿⣯⣿⣿⣿⣦⠀⠀⣼⡟⠀⣼⠏⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡀⠀⠀⠀⠀⠀
+			⠠⠀⣴⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣼⣿⢿⣿⠿⣿⠃⠈⠻⣿⣿⣿⣿⣿⣿⣾⡿⠁⣰⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀
+			⠀⣼⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⢿⣿⣿⣿⠿⢷⣦⡀⠀⠀⢣⣈⠉⠛⠚⠿⠥⠤⠶⠾⠿⣿⣿⣿⣇⠈⣿⠃⣴⣿⣷⣠⣤⣀⣀⣄⣀⣠⣤⣶⣾⡿⠿⣆⠀⠀⠀⠀
+			⣸⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⣻⠏⠉⠁⠀⠀⠀⠀⠉⠉⠉⠈⠀⠀⠀⠴⠛⠃⠀⠙⠿⠘⠁⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠹⣦⠀⠀⠀
+			⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⠀⠀⠀⢿⣦⠀⠀
+			⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⠿⡻⠿⣻⣵⣭⡿⣿⣿⠀⠀⠀⠈⣿⡆⠀
+			⠄⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣀⠀⠀⠀⠀⠀⠀⠘⣿⣷⠘⠀⠀⠀⠁⢾⣿⡿⣷⡀⠀⠀⠀⢸⣿⡀
+			⠛⠠⡉⠀⠀⠀⣁⠈⢠⠀⠤⠔⢒⣡⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠈⣟⢦⡀⠀⠀⠀⠀⠉⠟⣿⡿⠀⠀⠀⠀⣹⣇
+			⣶⣤⣤⣁⡤⢤⡤⠤⠆⢐⣴⣾⡵⡿⠙⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠃⠀⢀⣤⣀⠀⠀⠀⠀⠀⠀⠀⠛⢠⡿⠀⠀⢠⡔⢴⣾⠏⠀⠀⠀⠀⠂⢠⢻
+			⠉⠛⠾⡿⢿⣿⠿⠻⠟⠛⠉⢹⣶⣷⡀⡿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢧⠰⠿⣿⣿⣷⡀⠀⠀⠀⢀⣠⣶⡟⠀⠀⣰⢟⣴⣿⠋⣀⡠⢄⠼⠁⠀⠀⢸
+			⠀⠀⠀⠀⠀⠀⠀⣀⣤⡶⠒⠋⢻⣿⣷⣷⠈⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣻⣦⣤⣾⡛⠋⠉⠀⢀⣼⢻⣾⡿⠽⣉⣭⡛⠘⠁⠀⠀⢀⡼
+			⠀⠀⠀⣀⣠⣴⠟⠋⡀⠀⠀⠀⠸⣿⣿⣾⣦⡈⠻⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡿⣛⣳⠀⠀⠀⡜⣵⣿⣏⡙⠓⠶⠤⣶⣤⢤⠤⠖⠋⠀
+			⠀⣠⣶⠟⠩⢣⡀⠀⠙⣄⠀⠳⣀⡈⢺⡿⣷⣜⢆⡘⢧⣀⠀⠀⠀⠀⠀⠀⠀⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣅⡉⠓⠀⠳⣄⡸⢷⣿⣯⡿⢿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀
+			⣾⣉⠁⠀⡠⠀⠳⡄⠀⠈⠲⡀⠁⠉⠀⠙⢾⣿⣷⣘⢆⡻⣷⢄⡀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⠴⠶⠛⠛⠿⣿⣶⠾⣿⠿⣷⣿⣿⣄⣿⣝⠻⣿⣦⡀⠀⠀⠀⠀⠀
+			⢀⡌⠀⠀⠀⢀⠀⠘⢦⠀⠀⠘⠲⣀⣀⠀⠀⡙⠿⣿⣧⣅⠺⣗⡙⠢⢄⡀⠀⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⢿⣿⣯⣍⣤⣀⣤⣤⣴⣦⣤⣴⣾⣿⣧⣼⣿⡿⣙⡇⢻⣶⡟⡿⣿⣶⡄⠀⠀⠀
+			⠃⠀⠀⠀⠀⠀⠠⠀⠀⠣⡀⠀⠀⠻⣄⢄⠀⠘⢄⠘⢿⣿⣧⣀⠻⣄⠀⠘⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠀⠀⠀⠀⢘⡛⠛⠛⠀⠘⠀⢛⠛⠀⠀⣸⣧⣿⢃⡤⠼⡿⣸⡿⣇⠸⣿⣿⡄⠀⠀
+			⠀⠀⠀⠀⠀⠀⢀⠀⠑⠀⠘⢦⠁⠀⢨⣎⡳⣀⠈⠱⢄⠈⠙⢿⣷⣮⣽⡢⢽⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⠤⣤⣀⣤⣤⠶⠒⠠⣾⣿⡿⢁⠘⠀⡴⡵⡽⣿⠏⡔⡸⡟⣿⡀⠀
+			⠀⠀⠀⠀⠰⡀⢢⠀⠑⠘⢦⠀⠙⢦⠀⠑⣦⠉⣢⡀⠀⠳⢄⢠⠈⠙⡛⠻⢶⣼⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⣠⢤⣿⡿⠃⡎⢀⠟⠰⢙⡵⢃⠜⡼⢃⡿⠙⣧⠀
+			⠀⠀⠀⠀⠀⠈⠦⡑⣀⠀⠀⠱⠀⠀⠑⢆⡀⠑⣄⣘⣦⣖⣯⡵⠞⠋⠁⠀⠀⠈⠙⠻⣿⣮⡛⢧⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠾⣻⢻⣿⠀⡌⢁⠏⢀⣬⣼⡿⠟⣻⠰⢫⢁⣼⡇⠀
+			⣤⣤⣤⣤⣤⣀⣐⣈⣒⣐⣀⣠⣤⣤⣴⣾⡿⠿⠿⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠷⣾⣭⣭⣄⡈⠲⠢⠀⠀⠀⠀⠀⣠⣤⣾⣻⡽⠿⠛⠿⢾⣥⣤⣤⣀⣮⣤⣇⣤⣤⣴⠾⠛⠉⠀⠀
+			⠀⠉⠉⡉⠉⠛⠈⠁⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠛⠿⠿⠿⠷⠞⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠈⢉⠉⠁⠉⠀⠀⠀⠉⠉⠀⠀⠀⠀
+
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⠾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⢀⣤⡾⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⣿⣠⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⣠⡾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣧⡀⠀⠀⠀⠀
+			⠀⠀⠀⠀⢀⣼⡟⠁⣠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣧⠀⠀⠀⠀
+			⠀⠀⠀⢠⣿⡿⠀⠸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣧⠀⠀⠀
+			⠀⠀⢀⣼⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⠇⠀⠀
+			⠀⠀⣾⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⠀⠀
+			⠀⢸⣧⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀
+			⠀⢸⣽⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⣿⠀
+			⠀⣸⣿⡇⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣠⣤⣤⣠⣤⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡷⣿⡇
+			⢠⣿⣿⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⡿⣿⣷⣦⠀⠀⠀⠀⠀⣴⣿⣟⣋⣉⣿⣿⣅⣠⣯⣾⣿⣿⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⢻⡇
+			⠀⣿⣿⠀⠀⠀⠀⠀⢸⣿⣿⠿⣻⣷⠿⠿⢿⣯⣉⠁⠀⠀⠀⠀⠀⠀⢉⣩⣽⡿⠿⠿⠿⢿⣥⣴⡿⣿⣿⣧⡤⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⢸⡇
+			⠀⢹⣿⠀⠀⠀⠀⠀⠀⢠⣄⣾⣿⣧⣤⡤⣤⣈⣻⣷⡄⠀⠀⢀⡀⣴⣿⣿⣋⣧⣶⡿⢶⣾⣿⣿⣧⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣹⡇
+			⠀⢸⣿⡄⠀⠀⠀⠀⠀⠈⠉⠉⢹⣟⠻⠶⠿⠉⣽⣿⠇⠀⠀⠀⠀⠿⠿⠿⠋⠹⣿⣿⣾⣷⡾⠟⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠋⠁
+			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠳⠾⠛⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣏⣿⠀⠀
+			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⣿⣟⠀⠀
+			⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣽⣿⡏⠀⠀
+			⠀⠈⠻⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⠀⠀
+			⠀⠀⠀⠈⢿⡆⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⠿⣿⣿⣿⣿⣿⣿⣿⠿⣿⡿⠻⣿⣻⣿⣦⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀
+			⠀⠀⠀⠀⠘⣧⠀⠠⡄⠀⠀⣴⣿⣿⣻⠛⣿⣇⣈⣿⣿⣿⣿⣻⣿⣷⣿⣷⣤⣤⣿⣿⣿⣿⣿⣿⣦⣄⢀⠀⠀⠀⠀⠄⢀⡀⠀⠀⢰⣿⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⢸⠀⠰⣄⠀⣾⣿⣿⣿⣿⣿⣻⣿⣧⣜⠻⢿⡿⢛⣿⣿⡏⢹⣿⣝⣿⣿⣷⣿⣿⣿⣿⣿⠉⠀⡀⠀⠀⠀⢼⠇⠀⠀⢸⣿⡄⠀⠀⠀
+			⠀⠀⠀⠀⠀⢾⣧⠀⠸⡆⣿⣿⣿⣿⣿⣿⠟⠋⠙⠛⠿⠿⠿⠿⠟⠛⠛⠛⠛⠛⠛⠿⠿⣿⣿⣿⣿⣿⡆⢸⡇⢀⣷⠀⠀⠀⠀⠀⣿⣿⣇⠀⠀⠀
+			⠀⠀⠀⠀⠀⢸⣿⣇⠀⢱⠘⠿⠉⠁⠙⢿⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣾⠟⠉⠁⠻⠇⢸⡇⣸⡟⠀⠀⠀⠀⣼⣿⣏⣻⡄⠀⠀
+			⠀⠀⠀⠀⠀⢸⢹⣿⣷⠀⠀⠀⠀⠀⢲⡀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⣡⣾⡟⠀⠀⠀⠀⢀⣿⢡⣿⠃⠀⠀⠀⣼⣿⣿⡟⣇⣇⠀⠀
+			⠀⠀⠀⠀⠀⢸⡇⢹⣿⡆⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⡿⠟⠋⠀⠀⠀⠀⢀⣾⢃⣿⡟⠀⠀⠀⢸⣿⣿⣿⡇⠍⣾⠀⠀
+			⠀⠀⠀⠀⠀⢸⠷⠾⢿⣿⠀⠀⠀⠀⢠⡆⠙⠿⣷⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣷⣀⠀⠀⠀⠀⠀⠀⣿⣵⣿⡏⠀⠀⠀⠀⣸⣿⣿⣿⡇⢠⣿⡄⠀
+			⠀⠀⠀⠀⠀⠈⠀⠀⠘⣿⣆⠀⠀⠀⠀⣷⠀⠀⠀⠈⠉⠀⠉⠉⠛⠃⠀⠀⠀⠈⠻⣷⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⡿⢻⡇⠀
+			⠀⠀⠀⠀⠀⣆⠀⠀⠀⠸⣿⣦⡀⠀⠀⠹⣷⠀⠀⠀⢹⣄⠀⠀⠀⣠⣶⡄⠀⠀⠀⢻⡆⠀⠀⠀⣤⣤⣶⣦⣄⣀⢀⣶⣿⣿⣿⡿⠛⠁⢀⣼⠇⠀
+			⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠙⣿⣿⣷⡀⢠⣿⡀⠀⠀⢸⣿⡆⠀⠀⢻⣿⣿⠀⠀⠀⢸⣿⡄⢀⣤⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⢀⡿⠏⠀⠀
+			⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⠀⣨⡿⠻⣿⣿⣿⡇⠀⠀⠸⣿⡇⠀⠀⠸⣿⣿⡆⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀⣀⡴⠋⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠳⣄⣠⡾⠋⠀⢰⡞⢿⣿⡁⠀⠀⠀⢿⣧⠀⠀⠀⢿⣿⡇⠀⠀⠀⠛⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠙⡏⠀⠀⣠⣾⡾⠛⠛⠛⠛⠛⠷⣾⣿⣷⣴⣦⣤⣾⣿⣶⣶⣶⣾⡟⠛⠛⣿⠛⠉⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⣼⠃⣰⣣⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⢿⡿⣿⣿⣿⣿⠀⠀⠀⢹⣆⠀⠀⢀⣴⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠐⣷⣼⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⢀⣤⠶⠶⠀⠀⠀⠀⠀⠀⠀⠈⠻⣄⠀⠀⠀⠹⣦⣴⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⢻⡇⠀⠀⠀⠀⠀⠚⠉⠁⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡄⠀⠀⠀⠻⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣦⡄⢰⣄⣀⣀⣀⣠⣤⣾⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣦⣤⣤⡄⠙⣶⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣤⣝⣿⣿⣾⠿⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣆⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡋⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⢀⣴⠀⠜⠋⠀⣰⣾⠿⠟⣿⠛⣿⣿⢹⠀⠀⠀⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⣦⣀⣀⣀⣀⣀⣠⣶⣶⣾⡿⠋⣼⣷⠀⣺⣿⣇⣶⡾⠁⠀⣿⣿⢸⠀⠀⠀⢸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠛⠛⠛⠛⠛⠛⠋⠉⠉⣠⣾⣿⣿⣾⣿⣿⣿⢿⠇⠀⠀⣿⣿⣿⠀⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣦⣀⠀⠀⠀⢀⣠⣶⣿⣿⣿⢩⣉⣹⣿⣿⣧⣾⠀⠀⠀⢹⣿⣿⠂⠀⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣷⣶⣶⣿⣿⣿⠟⢙⣿⣿⣿⣟⣿⡛⠛⠋⠀⠀⠀⣼⣿⣿⡀⠀⠀⠀⠸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠙⣿⣯⣉⣠⣶⣿⡏⠉⠹⠿⠛⠁⠀⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠸⣇⠀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢠⠀⠉⠉⠉⠁⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣾⠀⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣦⣄⠀⠀⠀⠘⣿⣷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⡇⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣦⣭⣉⠉⠻⣦⣄⡀⢈⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣷⣴⣶⣤⣀⢸⣿⣧⠀⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⣛⡓⠶⣭⣻⣷⢾⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⣾⣿⡟⢻⠛⢛⣒⣛⣛⣛⣻⣿⣿⣆⠀⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠟⠛⠛⠉⢉⣥⣿⡟⣳⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠈⠁⣿⡟⠷⠀⠘⣿⣍⣩⣭⣍⣻⣿⣿⡄⠀⠀⠀⠀
+			⠀⠀⠀⠀⠀⣠⠶⠒⠛⠛⠓⠲⠶⣦⣤⣎⡉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣧⠀⠰⢶⣿⣭⣭⣽⣯⣽⣿⣿⣧⠀⠀⠀⠀
+			⠀⠀⠀⢀⣼⡏⠀⠀⠀⠀⠀⠀⣠⣨⣭⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠚⣿⣿⠀⠀⠀⠙⣍⣉⣉⣉⣑⣻⣿⣿⣧⡀⠀⠀
+			⠀⠀⣴⣿⠋⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⣿⣿⡆⠀⠀⠚⠛⠛⠛⠛⠛⠿⠿⣿⣿⣧⠀⠀
+			⠀⢰⣿⣷⡀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣦⠀
+			⠀⠘⣿⣿⣿⣦⣤⣤⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡇
+			⠀⠀⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⡇
+			⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠛⠛⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣷⣮⣤⣤⣤⣤⣤⣤⣤⣤⣴⣿⣿⣿⣿⣷
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
+			⠀⠀⠀⡀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡈⢉⣙⡛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠁
+			-->
+		</div>
+	</body>
+	<!--The Prodigy and The Glitch Mob best bands idc-->
+	<!--That's why I don't have a girlfriend-->
+</html>
